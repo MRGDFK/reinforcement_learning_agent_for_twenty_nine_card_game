@@ -1,223 +1,195 @@
-    2025-03-20 03:55:46,126 - INFO - Starting test_game.py
-    2025-03-20 03:55:46,126 - INFO - Game initialized with 4 players and action space size: 85
-    2025-03-20 03:55:46,136 - INFO - Environment initialized with action space size: 85
-    2025-03-20 03:55:46,136 - INFO - Game started. Initial state for Player 0: {'hand': ['7D', '8S', 'TS', '9H', '9C', 'JH', 'TH', '8H'], 'trick': [], 'trump': None, 'bidding_team': None, 'bid': None, 'current_player': 0}
-    2025-03-20 03:55:46,137 - INFO - Legal actions for Player 0: ['pass', '16S', '16H', '16C', '16D', '17S', '17H', '17C', '17D', '18S', '18H', '18C', '18D', '19S', '19H', '19C', '19D', '20S', '20H', '20C', '20D', '21S', '21H', '21C', '21D', '22S', '22H', '22C', '22D', '23S', '23H', '23C', '23D', '24S', '24H', '24C', '24D', '25S', '25H', '25C', '25D', '26S', '26H', '26C', '26D', '27S', '27H', '27C', '27D', '28S', '28H', '28C', '28D']
-    2025-03-20 03:55:46,137 - INFO - Extracted state for Player 0: {'hand': ['7D', '8S', 'TS', '9H', '9C', 'JH', 'TH', '8H'], 'trick': [], 'trump': 'None', 'bidding_team': -1, 'bid': 0, 'current_player': 0, 'legal_actions': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52], 'raw_legal_actions': ['pass', '16S', '16H', '16C', '16D', '17S', '17H', '17C', '17D', '18S', '18H', '18C', '18D', '19S', '19H', '19C', '19D', '20S', '20H', '20C', '20D', '21S', '21H', '21C', '21D', '22S', '22H', '22C', '22D', '23S', '23H', '23C', '23D', '24S', '24H', '24C', '24D', '25S', '25H', '25C', '25D', '26S', '26H', '26C', '26D', '27S', '27H', '27C', '27D', '28S', '28H', '28C', '28D']}
-    2025-03-20 03:55:46,137 - INFO - Decoded action ID 18 to: 20H
-    2025-03-20 03:55:46,137 - INFO - Player 0 takes action: 20H
-    2025-03-20 03:55:46,137 - INFO - Bid made: 20H by Player 0. Trump: H
-    2025-03-20 03:55:46,137 - INFO - Next state for Player 1: {'hand': ['7C', 'QS', '7S', 'QD', 'AD', 'TC', '9D', '8D'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1}
-    2025-03-20 03:55:46,138 - INFO - Legal actions for Player 1: ['7C', 'QS', '7S', 'QD', 'AD', 'TC', '9D', '8D']
-    2025-03-20 03:55:46,138 - INFO - Extracted state for Player 1: {'hand': ['7C', 'QS', '7S', 'QD', 'AD', 'TC', '9D', '8D'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [69, 58, 53, 82, 84, 72, 79, 78], 'raw_legal_actions': ['7C', 'QS', '7S', 'QD', 'AD', 'TC', '9D', '8D']}
-    2025-03-20 03:55:46,138 - INFO - Decoded action ID 82 to: QD
-    2025-03-20 03:55:46,138 - INFO - Player 1 takes action: QD
-    2025-03-20 03:55:46,138 - INFO - Player 1 played card: QD. Current trick: ['QD']
-    2025-03-20 03:55:46,138 - INFO - Next state for Player 2: {'hand': ['JS', 'JC', 'TD', 'QH', '8C', 'AS', '7H', 'AH'], 'trick': ['QD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2}
-    2025-03-20 03:55:46,138 - INFO - Legal actions for Player 2: ['TD']
-    2025-03-20 03:55:46,138 - INFO - Extracted state for Player 2: {'hand': ['JS', 'JC', 'TD', 'QH', '8C', 'AS', '7H', 'AH'], 'trick': ['QD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [80], 'raw_legal_actions': ['TD']}
-    2025-03-20 03:55:46,139 - INFO - Decoded action ID 80 to: TD
-    2025-03-20 03:55:46,139 - INFO - Player 2 takes action: TD
-    2025-03-20 03:55:46,139 - INFO - Player 2 played card: TD. Current trick: ['QD', 'TD']
-    2025-03-20 03:55:46,139 - INFO - Next state for Player 3: {'hand': ['9S', 'QC', 'KH', 'KC', 'KD', 'KS', 'AC', 'JD'], 'trick': ['QD', 'TD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3}
-    2025-03-20 03:55:46,139 - INFO - Legal actions for Player 3: ['KD', 'JD']
-    2025-03-20 03:55:46,139 - INFO - Extracted state for Player 3: {'hand': ['9S', 'QC', 'KH', 'KC', 'KD', 'KS', 'AC', 'JD'], 'trick': ['QD', 'TD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [83, 81], 'raw_legal_actions': ['KD', 'JD']}
-    2025-03-20 03:55:46,140 - INFO - Decoded action ID 81 to: JD
-    2025-03-20 03:55:46,140 - INFO - Player 3 takes action: JD
-    2025-03-20 03:55:46,140 - INFO - Player 3 played card: JD. Current trick: ['QD', 'TD', 'JD']
-    2025-03-20 03:55:46,140 - INFO - Next state for Player 0: {'hand': ['7D', '8S', 'TS', '9H', '9C', 'JH', 'TH', '8H'], 'trick': ['QD', 'TD', 'JD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0}
-    2025-03-20 03:55:46,140 - INFO - Legal actions for Player 0: ['7D']
-    2025-03-20 03:55:46,140 - INFO - Extracted state for Player 0: {'hand': ['7D', '8S', 'TS', '9H', '9C', 'JH', 'TH', '8H'], 'trick': ['QD', 'TD', 'JD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [77], 'raw_legal_actions': ['7D']}
-    2025-03-20 03:55:46,140 - INFO - Decoded action ID 77 to: 7D
-    2025-03-20 03:55:46,140 - INFO - Player 0 takes action: 7D
-    2025-03-20 03:55:46,140 - INFO - Player 0 played card: 7D. Current trick: ['QD', 'TD', 'JD', '7D']
-    2025-03-20 03:55:46,140 - INFO - Trick won by Player 0: ['QD', 'TD', 'JD', '7D']
-    2025-03-20 03:55:46,140 - INFO - Next state for Player 0: {'hand': ['8S', 'TS', '9H', '9C', 'JH', 'TH', '8H'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0}
-    2025-03-20 03:55:46,141 - INFO - Legal actions for Player 0: ['8S', 'TS', '9H', '9C', 'JH', 'TH', '8H']
-    2025-03-20 03:55:46,141 - INFO - Extracted state for Player 0: {'hand': ['8S', 'TS', '9H', '9C', 'JH', 'TH', '8H'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [54, 56, 63, 71, 65, 64, 62], 'raw_legal_actions': ['8S', 'TS', '9H', '9C', 'JH', 'TH', '8H']}
-    2025-03-20 03:55:46,141 - INFO - Decoded action ID 64 to: TH
-    2025-03-20 03:55:46,141 - INFO - Player 0 takes action: TH
-    2025-03-20 03:55:46,141 - INFO - Player 0 played card: TH. Current trick: ['TH']
-    2025-03-20 03:55:46,141 - INFO - Next state for Player 1: {'hand': ['7C', 'QS', '7S', 'AD', 'TC', '9D', '8D'], 'trick': ['TH'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1}
-    2025-03-20 03:55:46,141 - INFO - Legal actions for Player 1: ['7C', 'QS', '7S', 'AD', 'TC', '9D', '8D']
-    2025-03-20 03:55:46,141 - INFO - Extracted state for Player 1: {'hand': ['7C', 'QS', '7S', 'AD', 'TC', '9D', '8D'], 'trick': ['TH'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [69, 58, 53, 84, 72, 79, 78], 'raw_legal_actions': ['7C', 'QS', '7S', 'AD', 'TC', '9D', '8D']}
-    2025-03-20 03:55:46,142 - INFO - Decoded action ID 69 to: 7C
-    2025-03-20 03:55:46,142 - INFO - Player 1 takes action: 7C
-    2025-03-20 03:55:46,142 - INFO - Player 1 played card: 7C. Current trick: ['TH', '7C']
-    2025-03-20 03:55:46,142 - INFO - Next state for Player 2: {'hand': ['JS', 'JC', 'QH', '8C', 'AS', '7H', 'AH'], 'trick': ['TH', '7C'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2}
-    2025-03-20 03:55:46,142 - INFO - Legal actions for Player 2: ['QH', '7H', 'AH']
-    2025-03-20 03:55:46,142 - INFO - Extracted state for Player 2: {'hand': ['JS', 'JC', 'QH', '8C', 'AS', '7H', 'AH'], 'trick': ['TH', '7C'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [66, 61, 68], 'raw_legal_actions': ['QH', '7H', 'AH']}
-    2025-03-20 03:55:46,142 - INFO - Decoded action ID 66 to: QH
-    2025-03-20 03:55:46,142 - INFO - Player 2 takes action: QH
-    2025-03-20 03:55:46,142 - INFO - Player 2 played card: QH. Current trick: ['TH', '7C', 'QH']
-    2025-03-20 03:55:46,143 - INFO - Next state for Player 3: {'hand': ['9S', 'QC', 'KH', 'KC', 'KD', 'KS', 'AC'], 'trick': ['TH', '7C', 'QH'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3}
-    2025-03-20 03:55:46,143 - INFO - Legal actions for Player 3: ['KH']
-    2025-03-20 03:55:46,143 - INFO - Extracted state for Player 3: {'hand': ['9S', 'QC', 'KH', 'KC', 'KD', 'KS', 'AC'], 'trick': ['TH', '7C', 'QH'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [67], 'raw_legal_actions': ['KH']}
-    2025-03-20 03:55:46,143 - INFO - Decoded action ID 67 to: KH
-    2025-03-20 03:55:46,143 - INFO - Player 3 takes action: KH
-    2025-03-20 03:55:46,143 - INFO - Player 3 played card: KH. Current trick: ['TH', '7C', 'QH', 'KH']
-    2025-03-20 03:55:46,143 - INFO - Trick won by Player 3: ['TH', '7C', 'QH', 'KH']
-    2025-03-20 03:55:46,143 - INFO - Next state for Player 3: {'hand': ['9S', 'QC', 'KC', 'KD', 'KS', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3}
-    2025-03-20 03:55:46,144 - INFO - Legal actions for Player 3: ['9S', 'QC', 'KC', 'KD', 'KS', 'AC']
-    2025-03-20 03:55:46,144 - INFO - Extracted state for Player 3: {'hand': ['9S', 'QC', 'KC', 'KD', 'KS', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [55, 74, 75, 83, 59, 76], 'raw_legal_actions': ['9S', 'QC', 'KC', 'KD', 'KS', 'AC']}
-    2025-03-20 03:55:46,144 - INFO - Decoded action ID 55 to: 9S
-    2025-03-20 03:55:46,144 - INFO - Player 3 takes action: 9S
-    2025-03-20 03:55:46,144 - INFO - Player 3 played card: 9S. Current trick: ['9S']
-    2025-03-20 03:55:46,144 - INFO - Next state for Player 0: {'hand': ['8S', 'TS', '9H', '9C', 'JH', '8H'], 'trick': ['9S'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0}
-    2025-03-20 03:55:46,144 - INFO - Legal actions for Player 0: ['8S', 'TS']
-    2025-03-20 03:55:46,144 - INFO - Extracted state for Player 0: {'hand': ['8S', 'TS', '9H', '9C', 'JH', '8H'], 'trick': ['9S'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [54, 56], 'raw_legal_actions': ['8S', 'TS']}
-    2025-03-20 03:55:46,145 - INFO - Decoded action ID 54 to: 8S
-    2025-03-20 03:55:46,145 - INFO - Player 0 takes action: 8S
-    2025-03-20 03:55:46,145 - INFO - Player 0 played card: 8S. Current trick: ['9S', '8S']
-    2025-03-20 03:55:46,145 - INFO - Next state for Player 1: {'hand': ['QS', '7S', 'AD', 'TC', '9D', '8D'], 'trick': ['9S', '8S'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1}
-    2025-03-20 03:55:46,145 - INFO - Legal actions for Player 1: ['QS', '7S']
-    2025-03-20 03:55:46,145 - INFO - Extracted state for Player 1: {'hand': ['QS', '7S', 'AD', 'TC', '9D', '8D'], 'trick': ['9S', '8S'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [58, 53], 'raw_legal_actions': ['QS', '7S']}
-    2025-03-20 03:55:46,145 - INFO - Decoded action ID 58 to: QS
-    2025-03-20 03:55:46,145 - INFO - Player 1 takes action: QS
-    2025-03-20 03:55:46,145 - INFO - Player 1 played card: QS. Current trick: ['9S', '8S', 'QS']
-    2025-03-20 03:55:46,145 - INFO - Next state for Player 2: {'hand': ['JS', 'JC', '8C', 'AS', '7H', 'AH'], 'trick': ['9S', '8S', 'QS'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2}
-    2025-03-20 03:55:46,146 - INFO - Legal actions for Player 2: ['JS', 'AS']
-    2025-03-20 03:55:46,146 - INFO - Extracted state for Player 2: {'hand': ['JS', 'JC', '8C', 'AS', '7H', 'AH'], 'trick': ['9S', '8S', 'QS'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [57, 60], 'raw_legal_actions': ['JS', 'AS']}
-    2025-03-20 03:55:46,146 - INFO - Decoded action ID 60 to: AS
-    2025-03-20 03:55:46,146 - INFO - Player 2 takes action: AS
-    2025-03-20 03:55:46,146 - INFO - Player 2 played card: AS. Current trick: ['9S', '8S', 'QS', 'AS']
-    2025-03-20 03:55:46,146 - INFO - Trick won by Player 3: ['9S', '8S', 'QS', 'AS']
-    2025-03-20 03:55:46,146 - INFO - Next state for Player 3: {'hand': ['QC', 'KC', 'KD', 'KS', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3}
-    2025-03-20 03:55:46,146 - INFO - Legal actions for Player 3: ['QC', 'KC', 'KD', 'KS', 'AC']
-    2025-03-20 03:55:46,146 - INFO - Extracted state for Player 3: {'hand': ['QC', 'KC', 'KD', 'KS', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [74, 75, 83, 59, 76], 'raw_legal_actions': ['QC', 'KC', 'KD', 'KS', 'AC']}
-    2025-03-20 03:55:46,146 - INFO - Decoded action ID 74 to: QC
-    2025-03-20 03:55:46,146 - INFO - Player 3 takes action: QC
-    2025-03-20 03:55:46,147 - INFO - Player 3 played card: QC. Current trick: ['QC']
-    2025-03-20 03:55:46,147 - INFO - Next state for Player 0: {'hand': ['TS', '9H', '9C', 'JH', '8H'], 'trick': ['QC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0}
-    2025-03-20 03:55:46,147 - INFO - Legal actions for Player 0: ['9C']
-    2025-03-20 03:55:46,147 - INFO - Extracted state for Player 0: {'hand': ['TS', '9H', '9C', 'JH', '8H'], 'trick': ['QC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [71], 'raw_legal_actions': ['9C']}
-    2025-03-20 03:55:46,147 - INFO - Decoded action ID 71 to: 9C
-    2025-03-20 03:55:46,147 - INFO - Player 0 takes action: 9C
-    2025-03-20 03:55:46,147 - INFO - Player 0 played card: 9C. Current trick: ['QC', '9C']
-    2025-03-20 03:55:46,147 - INFO - Next state for Player 1: {'hand': ['7S', 'AD', 'TC', '9D', '8D'], 'trick': ['QC', '9C'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1}
-    2025-03-20 03:55:46,147 - INFO - Legal actions for Player 1: ['TC']
-    2025-03-20 03:55:46,147 - INFO - Extracted state for Player 1: {'hand': ['7S', 'AD', 'TC', '9D', '8D'], 'trick': ['QC', '9C'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [72], 'raw_legal_actions': ['TC']}
-    2025-03-20 03:55:46,148 - INFO - Decoded action ID 72 to: TC
-    2025-03-20 03:55:46,148 - INFO - Player 1 takes action: TC
-    2025-03-20 03:55:46,148 - INFO - Player 1 played card: TC. Current trick: ['QC', '9C', 'TC']
-    2025-03-20 03:55:46,148 - INFO - Next state for Player 2: {'hand': ['JS', 'JC', '8C', '7H', 'AH'], 'trick': ['QC', '9C', 'TC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2}
-    2025-03-20 03:55:46,148 - INFO - Legal actions for Player 2: ['JC', '8C']
-    2025-03-20 03:55:46,148 - INFO - Extracted state for Player 2: {'hand': ['JS', 'JC', '8C', '7H', 'AH'], 'trick': ['QC', '9C', 'TC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [73, 70], 'raw_legal_actions': ['JC', '8C']}
-    2025-03-20 03:55:46,148 - INFO - Decoded action ID 70 to: 8C
-    2025-03-20 03:55:46,148 - INFO - Player 2 takes action: 8C
-    2025-03-20 03:55:46,148 - INFO - Player 2 played card: 8C. Current trick: ['QC', '9C', 'TC', '8C']
-    2025-03-20 03:55:46,148 - INFO - Trick won by Player 0: ['QC', '9C', 'TC', '8C']
-    2025-03-20 03:55:46,149 - INFO - Next state for Player 0: {'hand': ['TS', '9H', 'JH', '8H'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0}
-    2025-03-20 03:55:46,149 - INFO - Legal actions for Player 0: ['TS', '9H', 'JH', '8H']
-    2025-03-20 03:55:46,149 - INFO - Extracted state for Player 0: {'hand': ['TS', '9H', 'JH', '8H'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [56, 63, 65, 62], 'raw_legal_actions': ['TS', '9H', 'JH', '8H']}
-    2025-03-20 03:55:46,149 - INFO - Decoded action ID 56 to: TS
-    2025-03-20 03:55:46,149 - INFO - Player 0 takes action: TS
-    2025-03-20 03:55:46,149 - INFO - Player 0 played card: TS. Current trick: ['TS']
-    2025-03-20 03:55:46,149 - INFO - Next state for Player 1: {'hand': ['7S', 'AD', '9D', '8D'], 'trick': ['TS'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1}
-    2025-03-20 03:55:46,149 - INFO - Legal actions for Player 1: ['7S']
-    2025-03-20 03:55:46,149 - INFO - Extracted state for Player 1: {'hand': ['7S', 'AD', '9D', '8D'], 'trick': ['TS'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [53], 'raw_legal_actions': ['7S']}
-    2025-03-20 03:55:46,149 - INFO - Decoded action ID 53 to: 7S
-    2025-03-20 03:55:46,150 - INFO - Player 1 takes action: 7S
-    2025-03-20 03:55:46,150 - INFO - Player 1 played card: 7S. Current trick: ['TS', '7S']
-    2025-03-20 03:55:46,150 - INFO - Next state for Player 2: {'hand': ['JS', 'JC', '7H', 'AH'], 'trick': ['TS', '7S'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2}
-    2025-03-20 03:55:46,150 - INFO - Legal actions for Player 2: ['JS']
-    2025-03-20 03:55:46,150 - INFO - Extracted state for Player 2: {'hand': ['JS', 'JC', '7H', 'AH'], 'trick': ['TS', '7S'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [57], 'raw_legal_actions': ['JS']}
-    2025-03-20 03:55:46,150 - INFO - Decoded action ID 57 to: JS
-    2025-03-20 03:55:46,150 - INFO - Player 2 takes action: JS
-    2025-03-20 03:55:46,150 - INFO - Player 2 played card: JS. Current trick: ['TS', '7S', 'JS']
-    2025-03-20 03:55:46,150 - INFO - Next state for Player 3: {'hand': ['KC', 'KD', 'KS', 'AC'], 'trick': ['TS', '7S', 'JS'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3}
-    2025-03-20 03:55:46,151 - INFO - Legal actions for Player 3: ['KS']
-    2025-03-20 03:55:46,151 - INFO - Extracted state for Player 3: {'hand': ['KC', 'KD', 'KS', 'AC'], 'trick': ['TS', '7S', 'JS'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [59], 'raw_legal_actions': ['KS']}
-    2025-03-20 03:55:46,151 - INFO - Decoded action ID 59 to: KS
-    2025-03-20 03:55:46,151 - INFO - Player 3 takes action: KS
-    2025-03-20 03:55:46,151 - INFO - Player 3 played card: KS. Current trick: ['TS', '7S', 'JS', 'KS']
-    2025-03-20 03:55:46,151 - INFO - Trick won by Player 3: ['TS', '7S', 'JS', 'KS']
-    2025-03-20 03:55:46,151 - INFO - Next state for Player 3: {'hand': ['KC', 'KD', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3}
-    2025-03-20 03:55:46,151 - INFO - Legal actions for Player 3: ['KC', 'KD', 'AC']
-    2025-03-20 03:55:46,151 - INFO - Extracted state for Player 3: {'hand': ['KC', 'KD', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [75, 83, 76], 'raw_legal_actions': ['KC', 'KD', 'AC']}
-    2025-03-20 03:55:46,151 - INFO - Decoded action ID 83 to: KD
-    2025-03-20 03:55:46,152 - INFO - Player 3 takes action: KD
-    2025-03-20 03:55:46,152 - INFO - Player 3 played card: KD. Current trick: ['KD']
-    2025-03-20 03:55:46,152 - INFO - Next state for Player 0: {'hand': ['9H', 'JH', '8H'], 'trick': ['KD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0}
-    2025-03-20 03:55:46,152 - INFO - Legal actions for Player 0: ['9H', 'JH', '8H']
-    2025-03-20 03:55:46,152 - INFO - Extracted state for Player 0: {'hand': ['9H', 'JH', '8H'], 'trick': ['KD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [63, 65, 62], 'raw_legal_actions': ['9H', 'JH', '8H']}
-    2025-03-20 03:55:46,152 - INFO - Decoded action ID 65 to: JH
-    2025-03-20 03:55:46,152 - INFO - Player 0 takes action: JH
-    2025-03-20 03:55:46,152 - INFO - Player 0 played card: JH. Current trick: ['KD', 'JH']
-    2025-03-20 03:55:46,153 - INFO - Next state for Player 1: {'hand': ['AD', '9D', '8D'], 'trick': ['KD', 'JH'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1}
-    2025-03-20 03:55:46,153 - INFO - Legal actions for Player 1: ['AD', '9D', '8D']
-    2025-03-20 03:55:46,153 - INFO - Extracted state for Player 1: {'hand': ['AD', '9D', '8D'], 'trick': ['KD', 'JH'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [84, 79, 78], 'raw_legal_actions': ['AD', '9D', '8D']}
-    2025-03-20 03:55:46,153 - INFO - Decoded action ID 78 to: 8D
-    2025-03-20 03:55:46,153 - INFO - Player 1 takes action: 8D
-    2025-03-20 03:55:46,153 - INFO - Player 1 played card: 8D. Current trick: ['KD', 'JH', '8D']
-    2025-03-20 03:55:46,153 - INFO - Next state for Player 2: {'hand': ['JC', '7H', 'AH'], 'trick': ['KD', 'JH', '8D'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2}
-    2025-03-20 03:55:46,153 - INFO - Legal actions for Player 2: ['JC', '7H', 'AH']
-    2025-03-20 03:55:46,153 - INFO - Extracted state for Player 2: {'hand': ['JC', '7H', 'AH'], 'trick': ['KD', 'JH', '8D'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [73, 61, 68], 'raw_legal_actions': ['JC', '7H', 'AH']}
-    2025-03-20 03:55:46,154 - INFO - Decoded action ID 68 to: AH
-    2025-03-20 03:55:46,154 - INFO - Player 2 takes action: AH
-    2025-03-20 03:55:46,154 - INFO - Player 2 played card: AH. Current trick: ['KD', 'JH', '8D', 'AH']
-    2025-03-20 03:55:46,154 - INFO - Trick won by Player 3: ['KD', 'JH', '8D', 'AH']
-    2025-03-20 03:55:46,154 - INFO - Next state for Player 3: {'hand': ['KC', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3}
-    2025-03-20 03:55:46,154 - INFO - Legal actions for Player 3: ['KC', 'AC']
-    2025-03-20 03:55:46,154 - INFO - Extracted state for Player 3: {'hand': ['KC', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [75, 76], 'raw_legal_actions': ['KC', 'AC']}
-    2025-03-20 03:55:46,154 - INFO - Decoded action ID 75 to: KC
-    2025-03-20 03:55:46,155 - INFO - Player 3 takes action: KC
-    2025-03-20 03:55:46,155 - INFO - Player 3 played card: KC. Current trick: ['KC']
-    2025-03-20 03:55:46,155 - INFO - Next state for Player 0: {'hand': ['9H', '8H'], 'trick': ['KC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0}
-    2025-03-20 03:55:46,155 - INFO - Legal actions for Player 0: ['9H', '8H']
-    2025-03-20 03:55:46,155 - INFO - Extracted state for Player 0: {'hand': ['9H', '8H'], 'trick': ['KC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [63, 62], 'raw_legal_actions': ['9H', '8H']}
-    2025-03-20 03:55:46,155 - INFO - Decoded action ID 62 to: 8H
-    2025-03-20 03:55:46,155 - INFO - Player 0 takes action: 8H
-    2025-03-20 03:55:46,155 - INFO - Player 0 played card: 8H. Current trick: ['KC', '8H']
-    2025-03-20 03:55:46,155 - INFO - Next state for Player 1: {'hand': ['AD', '9D'], 'trick': ['KC', '8H'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1}
-    2025-03-20 03:55:46,155 - INFO - Legal actions for Player 1: ['AD', '9D']
-    2025-03-20 03:55:46,156 - INFO - Extracted state for Player 1: {'hand': ['AD', '9D'], 'trick': ['KC', '8H'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [84, 79], 'raw_legal_actions': ['AD', '9D']}
-    2025-03-20 03:55:46,156 - INFO - Decoded action ID 79 to: 9D
-    2025-03-20 03:55:46,156 - INFO - Player 1 takes action: 9D
-    2025-03-20 03:55:46,156 - INFO - Player 1 played card: 9D. Current trick: ['KC', '8H', '9D']
-    2025-03-20 03:55:46,156 - INFO - Next state for Player 2: {'hand': ['JC', '7H'], 'trick': ['KC', '8H', '9D'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2}
-    2025-03-20 03:55:46,156 - INFO - Legal actions for Player 2: ['JC']
-    2025-03-20 03:55:46,156 - INFO - Extracted state for Player 2: {'hand': ['JC', '7H'], 'trick': ['KC', '8H', '9D'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [73], 'raw_legal_actions': ['JC']}
-    2025-03-20 03:55:46,156 - INFO - Decoded action ID 73 to: JC
-    2025-03-20 03:55:46,156 - INFO - Player 2 takes action: JC
-    2025-03-20 03:55:46,157 - INFO - Player 2 played card: JC. Current trick: ['KC', '8H', '9D', 'JC']
-    2025-03-20 03:55:46,157 - INFO - Trick won by Player 1: ['KC', '8H', '9D', 'JC']
-    2025-03-20 03:55:46,157 - INFO - Next state for Player 1: {'hand': ['AD'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1}
-    2025-03-20 03:55:46,157 - INFO - Legal actions for Player 1: ['AD']
-    2025-03-20 03:55:46,157 - INFO - Extracted state for Player 1: {'hand': ['AD'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [84], 'raw_legal_actions': ['AD']}
-    2025-03-20 03:55:46,157 - INFO - Decoded action ID 84 to: AD
-    2025-03-20 03:55:46,157 - INFO - Player 1 takes action: AD
-    2025-03-20 03:55:46,157 - INFO - Player 1 played card: AD. Current trick: ['AD']
-    2025-03-20 03:55:46,157 - INFO - Next state for Player 2: {'hand': ['7H'], 'trick': ['AD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2}
-    2025-03-20 03:55:46,157 - INFO - Legal actions for Player 2: ['7H']
-    2025-03-20 03:55:46,158 - INFO - Extracted state for Player 2: {'hand': ['7H'], 'trick': ['AD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [61], 'raw_legal_actions': ['7H']}
-    2025-03-20 03:55:46,158 - INFO - Decoded action ID 61 to: 7H
-    2025-03-20 03:55:46,158 - INFO - Player 2 takes action: 7H
-    2025-03-20 03:55:46,158 - INFO - Player 2 played card: 7H. Current trick: ['AD', '7H']
-    2025-03-20 03:55:46,158 - INFO - Next state for Player 3: {'hand': ['AC'], 'trick': ['AD', '7H'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3}
-    2025-03-20 03:55:46,158 - INFO - Legal actions for Player 3: ['AC']
-    2025-03-20 03:55:46,158 - INFO - Extracted state for Player 3: {'hand': ['AC'], 'trick': ['AD', '7H'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [76], 'raw_legal_actions': ['AC']}
-    2025-03-20 03:55:46,158 - INFO - Decoded action ID 76 to: AC
-    2025-03-20 03:55:46,158 - INFO - Player 3 takes action: AC
-    2025-03-20 03:55:46,159 - INFO - Player 3 played card: AC. Current trick: ['AD', '7H', 'AC']
-    2025-03-20 03:55:46,159 - INFO - Next state for Player 0: {'hand': ['9H'], 'trick': ['AD', '7H', 'AC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0}
-    2025-03-20 03:55:46,159 - INFO - Legal actions for Player 0: ['9H']
-    2025-03-20 03:55:46,159 - INFO - Extracted state for Player 0: {'hand': ['9H'], 'trick': ['AD', '7H', 'AC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [63], 'raw_legal_actions': ['9H']}
-    2025-03-20 03:55:46,159 - INFO - Decoded action ID 63 to: 9H
-    2025-03-20 03:55:46,159 - INFO - Player 0 takes action: 9H
-    2025-03-20 03:55:46,159 - INFO - Player 0 played card: 9H. Current trick: ['AD', '7H', 'AC', '9H']
-    2025-03-20 03:55:46,159 - INFO - Trick won by Player 3: ['AD', '7H', 'AC', '9H']
-    2025-03-20 03:55:46,159 - INFO - Next state for Player 3: {'hand': [], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3}
-    2025-03-20 03:55:46,159 - INFO - Legal actions for Player 3: []
-    2025-03-20 03:55:46,160 - INFO - Extracted state for Player 3: {'hand': [], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [], 'raw_legal_actions': []}
-    2025-03-20 03:55:46,160 - INFO - Legal actions for Player 3: []
-    2025-03-20 03:55:46,160 - INFO - Extracted state for Player 3: {'hand': [], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [], 'raw_legal_actions': []}
-    2025-03-20 03:55:46,160 - INFO - Legal actions for Player 3: []
-    2025-03-20 03:55:46,160 - INFO - Extracted state for Player 3: {'hand': [], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [], 'raw_legal_actions': []}
-    2025-03-20 03:55:46,160 - INFO - Legal actions for Player 3: []
-    2025-03-20 03:55:46,160 - INFO - Extracted state for Player 3: {'hand': [], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [], 'raw_legal_actions': []}
-    2025-03-20 03:55:46,160 - INFO - Legal actions for Player 3: []
-    2025-03-20 03:55:46,160 - INFO - Extracted state for Player 3: {'hand': [], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [], 'raw_legal_actions': []}
-    2025-03-20 03:55:46,160 - INFO - Game ended. Reward: -1
-    2025-03-20 03:55:46,160 - INFO - Payoffs calculated: [-1, 1, -1, 1]
-    2025-03-20 03:55:46,161 - INFO - Game completed. Trajectories: [[{'hand': ['7D', '8S', 'TS', '9H', '9C', 'JH', 'TH', '8H'], 'trick': [], 'trump': 'None', 'bidding_team': -1, 'bid': 0, 'current_player': 0, 'legal_actions': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52], 'raw_legal_actions': ['pass', '16S', '16H', '16C', '16D', '17S', '17H', '17C', '17D', '18S', '18H', '18C', '18D', '19S', '19H', '19C', '19D', '20S', '20H', '20C', '20D', '21S', '21H', '21C', '21D', '22S', '22H', '22C', '22D', '23S', '23H', '23C', '23D', '24S', '24H', '24C', '24D', '25S', '25H', '25C', '25D', '26S', '26H', '26C', '26D', '27S', '27H', '27C', '27D', '28S', '28H', '28C', '28D']}, np.int64(18), {'hand': ['7D', '8S', 'TS', '9H', '9C', 'JH', 'TH', '8H'], 'trick': ['QD', 'TD', 'JD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [77], 'raw_legal_actions': ['7D']}, np.int64(77), {'hand': ['8S', 'TS', '9H', '9C', 'JH', 'TH', '8H'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [54, 56, 63, 71, 65, 64, 62], 'raw_legal_actions': ['8S', 'TS', '9H', '9C', 'JH', 'TH', '8H']}, np.int64(64), {'hand': ['8S', 'TS', '9H', '9C', 'JH', '8H'], 'trick': ['9S'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [54, 56], 'raw_legal_actions': ['8S', 'TS']}, np.int64(54), {'hand': ['TS', '9H', '9C', 'JH', '8H'], 'trick': ['QC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [71], 'raw_legal_actions': ['9C']}, np.int64(71), {'hand': ['TS', '9H', 'JH', '8H'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [56, 63, 65, 62], 'raw_legal_actions': ['TS', '9H', 'JH', '8H']}, np.int64(56), {'hand': ['9H', 'JH', '8H'], 'trick': ['KD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [63, 65, 62], 'raw_legal_actions': ['9H', 'JH', '8H']}, np.int64(65), {'hand': ['9H', '8H'], 'trick': ['KC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [63, 62], 'raw_legal_actions': ['9H', '8H']}, np.int64(62), {'hand': ['9H'], 'trick': ['AD', '7H', 'AC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 0, 'legal_actions': [63], 'raw_legal_actions': ['9H']}, np.int64(63), {'hand': [], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [], 'raw_legal_actions': []}], [{'hand': ['7C', 'QS', '7S', 'QD', 'AD', 'TC', '9D', '8D'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [69, 58, 53, 82, 84, 72, 79, 78], 'raw_legal_actions': ['7C', 'QS', '7S', 'QD', 'AD', 'TC', '9D', '8D']}, np.int64(82), {'hand': ['7C', 'QS', '7S', 'AD', 'TC', '9D', '8D'], 'trick': ['TH'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [69, 58, 53, 84, 72, 79, 78], 'raw_legal_actions': ['7C', 'QS', '7S', 'AD', 'TC', '9D', '8D']}, np.int64(69), {'hand': ['QS', '7S', 'AD', 'TC', '9D', '8D'], 'trick': ['9S', '8S'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [58, 53], 'raw_legal_actions': ['QS', '7S']}, np.int64(58), {'hand': ['7S', 'AD', 'TC', '9D', '8D'], 'trick': ['QC', '9C'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [72], 'raw_legal_actions': ['TC']}, np.int64(72), {'hand': ['7S', 'AD', '9D', '8D'], 'trick': ['TS'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [53], 'raw_legal_actions': ['7S']}, np.int64(53), {'hand': ['AD', '9D', '8D'], 'trick': ['KD', 'JH'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [84, 79, 78], 'raw_legal_actions': ['AD', '9D', '8D']}, np.int64(78), {'hand': ['AD', '9D'], 'trick': ['KC', '8H'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [84, 79], 'raw_legal_actions': ['AD', '9D']}, np.int64(79), {'hand': ['AD'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 1, 'legal_actions': [84], 'raw_legal_actions': ['AD']}, np.int64(84), {'hand': [], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [], 'raw_legal_actions': []}], [{'hand': ['JS', 'JC', 'TD', 'QH', '8C', 'AS', '7H', 'AH'], 'trick': ['QD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [80], 'raw_legal_actions': ['TD']}, np.int64(80), {'hand': ['JS', 'JC', 'QH', '8C', 'AS', '7H', 'AH'], 'trick': ['TH', '7C'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [66, 61, 68], 'raw_legal_actions': ['QH', '7H', 'AH']}, np.int64(66), {'hand': ['JS', 'JC', '8C', 'AS', '7H', 'AH'], 'trick': ['9S', '8S', 'QS'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [57, 60], 'raw_legal_actions': ['JS', 'AS']}, np.int64(60), {'hand': ['JS', 'JC', '8C', '7H', 'AH'], 'trick': ['QC', '9C', 'TC'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [73, 70], 'raw_legal_actions': ['JC', '8C']}, np.int64(70), {'hand': ['JS', 'JC', '7H', 'AH'], 'trick': ['TS', '7S'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [57], 'raw_legal_actions': ['JS']}, np.int64(57), {'hand': ['JC', '7H', 'AH'], 'trick': ['KD', 'JH', '8D'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [73, 61, 68], 'raw_legal_actions': ['JC', '7H', 'AH']}, np.int64(68), {'hand': ['JC', '7H'], 'trick': ['KC', '8H', '9D'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [73], 'raw_legal_actions': ['JC']}, np.int64(73), {'hand': ['7H'], 'trick': ['AD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 2, 'legal_actions': [61], 'raw_legal_actions': ['7H']}, np.int64(61), {'hand': [], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [], 'raw_legal_actions': []}], [{'hand': ['9S', 'QC', 'KH', 'KC', 'KD', 'KS', 'AC', 'JD'], 'trick': ['QD', 'TD'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [83, 81], 'raw_legal_actions': ['KD', 'JD']}, np.int64(81), {'hand': ['9S', 'QC', 'KH', 'KC', 'KD', 'KS', 'AC'], 'trick': ['TH', '7C', 'QH'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [67], 'raw_legal_actions': ['KH']}, np.int64(67), {'hand': ['9S', 'QC', 'KC', 'KD', 'KS', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [55, 74, 75, 83, 59, 76], 'raw_legal_actions': ['9S', 'QC', 'KC', 'KD', 'KS', 'AC']}, np.int64(55), {'hand': ['QC', 'KC', 'KD', 'KS', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [74, 75, 83, 59, 76], 'raw_legal_actions': ['QC', 'KC', 'KD', 'KS', 'AC']}, np.int64(74), {'hand': ['KC', 'KD', 'KS', 'AC'], 'trick': ['TS', '7S', 'JS'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [59], 'raw_legal_actions': ['KS']}, np.int64(59), {'hand': ['KC', 'KD', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [75, 83, 76], 'raw_legal_actions': ['KC', 'KD', 'AC']}, np.int64(83), {'hand': ['KC', 'AC'], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [75, 76], 'raw_legal_actions': ['KC', 'AC']}, np.int64(75), {'hand': ['AC'], 'trick': ['AD', '7H'], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [76], 'raw_legal_actions': ['AC']}, np.int64(76), {'hand': [], 'trick': [], 'trump': 'H', 'bidding_team': 0, 'bid': 20, 'current_player': 3, 'legal_actions': [], 'raw_legal_actions': []}]]
+2025-03-20 04:17:30,385 - INFO - Starting test_game.py
+2025-03-20 04:17:30,385 - INFO - Game initialized with 4 players and action space size: 85
+2025-03-20 04:17:30,394 - INFO - Environment initialized with action space size: 85
+2025-03-20 04:17:30,394 - INFO - Game started. Initial state for Player 0: {'hand': ['AS', 'TD', 'QC', '8D'], 'trick': [], 'trump': None, 'bidding_team': None, 'bid': None, 'current_player': 0, 'bidding_phase': True}
+2025-03-20 04:17:30,394 - INFO - Extracted state for Player 0: {'hand': ['AS', 'TD', 'QC', '8D'], 'trick': [], 'trump': 'None', 'bidding_team': -1, 'bid': 0, 'current_player': 0, 'bidding_phase': True, 'legal_actions': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52], 'raw_legal_actions': ['pass', '16S', '16H', '16C', '16D', '17S', '17H', '17C', '17D', '18S', '18H', '18C', '18D', '19S', '19H', '19C', '19D', '20S', '20H', '20C', '20D', '21S', '21H', '21C', '21D', '22S', '22H', '22C', '22D', '23S', '23H', '23C', '23D', '24S', '24H', '24C', '24D', '25S', '25H', '25C', '25D', '26S', '26H', '26C', '26D', '27S', '27H', '27C', '27D', '28S', '28H', '28C', '28D']}
+2025-03-20 04:17:30,395 - INFO - Decoded action ID 20 to: 20D
+2025-03-20 04:17:30,395 - INFO - Player 0 takes action: 20D
+2025-03-20 04:17:30,395 - INFO - Next state for Player 1: {'hand': ['8C', 'TC', 'JD', 'AC'], 'trick': [], 'trump': None, 'bidding_team': None, 'bid': None, 'current_player': 1, 'bidding_phase': True}
+2025-03-20 04:17:30,395 - INFO - Extracted state for Player 1: {'hand': ['8C', 'TC', 'JD', 'AC'], 'trick': [], 'trump': 'None', 'bidding_team': -1, 'bid': 0, 'current_player': 1, 'bidding_phase': True, 'legal_actions': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52], 'raw_legal_actions': ['pass', '16S', '16H', '16C', '16D', '17S', '17H', '17C', '17D', '18S', '18H', '18C', '18D', '19S', '19H', '19C', '19D', '20S', '20H', '20C', '20D', '21S', '21H', '21C', '21D', '22S', '22H', '22C', '22D', '23S', '23H', '23C', '23D', '24S', '24H', '24C', '24D', '25S', '25H', '25C', '25D', '26S', '26H', '26C', '26D', '27S', '27H', '27C', '27D', '28S', '28H', '28C', '28D']}
+2025-03-20 04:17:30,395 - INFO - Decoded action ID 4 to: 16D
+2025-03-20 04:17:30,396 - INFO - Player 1 takes action: 16D
+2025-03-20 04:17:30,396 - INFO - Next state for Player 2: {'hand': ['JS', '9S', '8H', 'TH'], 'trick': [], 'trump': None, 'bidding_team': None, 'bid': None, 'current_player': 2, 'bidding_phase': True}
+2025-03-20 04:17:30,396 - INFO - Extracted state for Player 2: {'hand': ['JS', '9S', '8H', 'TH'], 'trick': [], 'trump': 'None', 'bidding_team': -1, 'bid': 0, 'current_player': 2, 'bidding_phase': True, 'legal_actions': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52], 'raw_legal_actions': ['pass', '16S', '16H', '16C', '16D', '17S', '17H', '17C', '17D', '18S', '18H', '18C', '18D', '19S', '19H', '19C', '19D', '20S', '20H', '20C', '20D', '21S', '21H', '21C', '21D', '22S', '22H', '22C', '22D', '23S', '23H', '23C', '23D', '24S', '24H', '24C', '24D', '25S', '25H', '25C', '25D', '26S', '26H', '26C', '26D', '27S', '27H', '27C', '27D', '28S', '28H', '28C', '28D']}
+2025-03-20 04:17:30,396 - INFO - Decoded action ID 34 to: 24H
+2025-03-20 04:17:30,396 - INFO - Player 2 takes action: 24H
+2025-03-20 04:17:30,396 - INFO - Next state for Player 3: {'hand': ['9C', 'JC', '8S', 'QS'], 'trick': [], 'trump': None, 'bidding_team': None, 'bid': None, 'current_player': 3, 'bidding_phase': True}
+2025-03-20 04:17:30,396 - INFO - Extracted state for Player 3: {'hand': ['9C', 'JC', '8S', 'QS'], 'trick': [], 'trump': 'None', 'bidding_team': -1, 'bid': 0, 'current_player': 3, 'bidding_phase': True, 'legal_actions': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52], 'raw_legal_actions': ['pass', '16S', '16H', '16C', '16D', '17S', '17H', '17C', '17D', '18S', '18H', '18C', '18D', '19S', '19H', '19C', '19D', '20S', '20H', '20C', '20D', '21S', '21H', '21C', '21D', '22S', '22H', '22C', '22D', '23S', '23H', '23C', '23D', '24S', '24H', '24C', '24D', '25S', '25H', '25C', '25D', '26S', '26H', '26C', '26D', '27S', '27H', '27C', '27D', '28S', '28H', '28C', '28D']}
+2025-03-20 04:17:30,396 - INFO - Decoded action ID 49 to: 28S
+2025-03-20 04:17:30,397 - INFO - Player 3 takes action: 28S
+2025-03-20 04:17:30,397 - INFO - Bidding ended. Highest bid: 28S by Player 3
+2025-03-20 04:17:30,397 - INFO - Next state for Player 0: {'hand': ['AS', 'TD', 'QC', '8D', 'QD', '7H', 'QH', 'AH'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False}
+2025-03-20 04:17:30,397 - INFO - Extracted state for Player 0: {'hand': ['AS', 'TD', 'QC', '8D', 'QD', '7H', 'QH', 'AH'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False, 'legal_actions': [60, 80, 74, 78, 82, 61, 66, 68], 'raw_legal_actions': ['AS', 'TD', 'QC', '8D', 'QD', '7H', 'QH', 'AH']}
+2025-03-20 04:17:30,397 - INFO - Decoded action ID 68 to: AH
+2025-03-20 04:17:30,397 - INFO - Player 0 takes action: AH
+2025-03-20 04:17:30,397 - INFO - Player 0 played card: AH. Current trick: ['AH']
+2025-03-20 04:17:30,397 - INFO - Next state for Player 1: {'hand': ['8C', 'TC', 'JD', 'AC', 'JH', 'KD', 'TS', '7D'], 'trick': ['AH'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False}
+2025-03-20 04:17:30,397 - INFO - Extracted state for Player 1: {'hand': ['8C', 'TC', 'JD', 'AC', 'JH', 'KD', 'TS', '7D'], 'trick': ['AH'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False, 'legal_actions': [65], 'raw_legal_actions': ['JH']}
+2025-03-20 04:17:30,397 - INFO - Decoded action ID 65 to: JH
+2025-03-20 04:17:30,397 - INFO - Player 1 takes action: JH
+2025-03-20 04:17:30,398 - INFO - Player 1 played card: JH. Current trick: ['AH', 'JH']
+2025-03-20 04:17:30,398 - INFO - Next state for Player 2: {'hand': ['JS', '9S', '8H', 'TH', '9D', 'KH', 'KS', '9H'], 'trick': ['AH', 'JH'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False}
+2025-03-20 04:17:30,398 - INFO - Extracted state for Player 2: {'hand': ['JS', '9S', '8H', 'TH', '9D', 'KH', 'KS', '9H'], 'trick': ['AH', 'JH'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [62, 64, 67, 63], 'raw_legal_actions': ['8H', 'TH', 'KH', '9H']}
+2025-03-20 04:17:30,398 - INFO - Decoded action ID 67 to: KH
+2025-03-20 04:17:30,398 - INFO - Player 2 takes action: KH
+2025-03-20 04:17:30,398 - INFO - Player 2 played card: KH. Current trick: ['AH', 'JH', 'KH']
+2025-03-20 04:17:30,398 - INFO - Next state for Player 3: {'hand': ['9C', 'JC', '8S', 'QS', 'AD', '7C', 'KC', '7S'], 'trick': ['AH', 'JH', 'KH'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False}
+2025-03-20 04:17:30,398 - INFO - Extracted state for Player 3: {'hand': ['9C', 'JC', '8S', 'QS', 'AD', '7C', 'KC', '7S'], 'trick': ['AH', 'JH', 'KH'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False, 'legal_actions': [71, 73, 54, 58, 84, 69, 75, 53], 'raw_legal_actions': ['9C', 'JC', '8S', 'QS', 'AD', '7C', 'KC', '7S']}
+2025-03-20 04:17:30,398 - INFO - Decoded action ID 54 to: 8S
+2025-03-20 04:17:30,398 - INFO - Player 3 takes action: 8S
+2025-03-20 04:17:30,398 - INFO - Player 3 played card: 8S. Current trick: ['AH', 'JH', 'KH', '8S']
+2025-03-20 04:17:30,399 - INFO - Trick won by Player 3: ['AH', 'JH', 'KH', '8S']
+2025-03-20 04:17:30,399 - INFO - Next state for Player 3: {'hand': ['9C', 'JC', 'QS', 'AD', '7C', 'KC', '7S'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False}
+2025-03-20 04:17:30,399 - INFO - Extracted state for Player 3: {'hand': ['9C', 'JC', 'QS', 'AD', '7C', 'KC', '7S'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False, 'legal_actions': [71, 73, 58, 84, 69, 75, 53], 'raw_legal_actions': ['9C', 'JC', 'QS', 'AD', '7C', 'KC', '7S']}
+2025-03-20 04:17:30,399 - INFO - Decoded action ID 75 to: KC
+2025-03-20 04:17:30,399 - INFO - Player 3 takes action: KC
+2025-03-20 04:17:30,399 - INFO - Player 3 played card: KC. Current trick: ['KC']
+2025-03-20 04:17:30,399 - INFO - Next state for Player 0: {'hand': ['AS', 'TD', 'QC', '8D', 'QD', '7H', 'QH'], 'trick': ['KC'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False}
+2025-03-20 04:17:30,399 - INFO - Extracted state for Player 0: {'hand': ['AS', 'TD', 'QC', '8D', 'QD', '7H', 'QH'], 'trick': ['KC'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False, 'legal_actions': [74], 'raw_legal_actions': ['QC']}
+2025-03-20 04:17:30,399 - INFO - Decoded action ID 74 to: QC
+2025-03-20 04:17:30,399 - INFO - Player 0 takes action: QC
+2025-03-20 04:17:30,399 - INFO - Player 0 played card: QC. Current trick: ['KC', 'QC']
+2025-03-20 04:17:30,399 - INFO - Next state for Player 1: {'hand': ['8C', 'TC', 'JD', 'AC', 'KD', 'TS', '7D'], 'trick': ['KC', 'QC'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False}
+2025-03-20 04:17:30,400 - INFO - Extracted state for Player 1: {'hand': ['8C', 'TC', 'JD', 'AC', 'KD', 'TS', '7D'], 'trick': ['KC', 'QC'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False, 'legal_actions': [70, 72, 76], 'raw_legal_actions': ['8C', 'TC', 'AC']}
+2025-03-20 04:17:30,400 - INFO - Decoded action ID 70 to: 8C
+2025-03-20 04:17:30,400 - INFO - Player 1 takes action: 8C
+2025-03-20 04:17:30,400 - INFO - Player 1 played card: 8C. Current trick: ['KC', 'QC', '8C']
+2025-03-20 04:17:30,400 - INFO - Next state for Player 2: {'hand': ['JS', '9S', '8H', 'TH', '9D', 'KS', '9H'], 'trick': ['KC', 'QC', '8C'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False}
+2025-03-20 04:17:30,400 - INFO - Extracted state for Player 2: {'hand': ['JS', '9S', '8H', 'TH', '9D', 'KS', '9H'], 'trick': ['KC', 'QC', '8C'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [57, 55, 62, 64, 79, 59, 63], 'raw_legal_actions': ['JS', '9S', '8H', 'TH', '9D', 'KS', '9H']}
+2025-03-20 04:17:30,400 - INFO - Decoded action ID 79 to: 9D
+2025-03-20 04:17:30,400 - INFO - Player 2 takes action: 9D
+2025-03-20 04:17:30,400 - INFO - Player 2 played card: 9D. Current trick: ['KC', 'QC', '8C', '9D']
+2025-03-20 04:17:30,401 - INFO - Trick won by Player 3: ['KC', 'QC', '8C', '9D']
+2025-03-20 04:17:30,401 - INFO - Next state for Player 3: {'hand': ['9C', 'JC', 'QS', 'AD', '7C', '7S'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False}
+2025-03-20 04:17:30,401 - INFO - Extracted state for Player 3: {'hand': ['9C', 'JC', 'QS', 'AD', '7C', '7S'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False, 'legal_actions': [71, 73, 58, 84, 69, 53], 'raw_legal_actions': ['9C', 'JC', 'QS', 'AD', '7C', '7S']}
+2025-03-20 04:17:30,401 - INFO - Decoded action ID 71 to: 9C
+2025-03-20 04:17:30,401 - INFO - Player 3 takes action: 9C
+2025-03-20 04:17:30,401 - INFO - Player 3 played card: 9C. Current trick: ['9C']
+2025-03-20 04:17:30,401 - INFO - Next state for Player 0: {'hand': ['AS', 'TD', '8D', 'QD', '7H', 'QH'], 'trick': ['9C'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False}
+2025-03-20 04:17:30,401 - INFO - Extracted state for Player 0: {'hand': ['AS', 'TD', '8D', 'QD', '7H', 'QH'], 'trick': ['9C'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False, 'legal_actions': [60, 80, 78, 82, 61, 66], 'raw_legal_actions': ['AS', 'TD', '8D', 'QD', '7H', 'QH']}
+2025-03-20 04:17:30,401 - INFO - Decoded action ID 61 to: 7H
+2025-03-20 04:17:30,401 - INFO - Player 0 takes action: 7H
+2025-03-20 04:17:30,402 - INFO - Player 0 played card: 7H. Current trick: ['9C', '7H']
+2025-03-20 04:17:30,402 - INFO - Next state for Player 1: {'hand': ['TC', 'JD', 'AC', 'KD', 'TS', '7D'], 'trick': ['9C', '7H'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False}
+2025-03-20 04:17:30,402 - INFO - Extracted state for Player 1: {'hand': ['TC', 'JD', 'AC', 'KD', 'TS', '7D'], 'trick': ['9C', '7H'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False, 'legal_actions': [72, 76], 'raw_legal_actions': ['TC', 'AC']}
+2025-03-20 04:17:30,402 - INFO - Decoded action ID 76 to: AC
+2025-03-20 04:17:30,402 - INFO - Player 1 takes action: AC
+2025-03-20 04:17:30,402 - INFO - Player 1 played card: AC. Current trick: ['9C', '7H', 'AC']
+2025-03-20 04:17:30,402 - INFO - Next state for Player 2: {'hand': ['JS', '9S', '8H', 'TH', 'KS', '9H'], 'trick': ['9C', '7H', 'AC'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False}
+2025-03-20 04:17:30,402 - INFO - Extracted state for Player 2: {'hand': ['JS', '9S', '8H', 'TH', 'KS', '9H'], 'trick': ['9C', '7H', 'AC'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [57, 55, 62, 64, 59, 63], 'raw_legal_actions': ['JS', '9S', '8H', 'TH', 'KS', '9H']}
+2025-03-20 04:17:30,402 - INFO - Decoded action ID 62 to: 8H
+2025-03-20 04:17:30,402 - INFO - Player 2 takes action: 8H
+2025-03-20 04:17:30,403 - INFO - Player 2 played card: 8H. Current trick: ['9C', '7H', 'AC', '8H']
+2025-03-20 04:17:30,403 - INFO - Trick won by Player 3: ['9C', '7H', 'AC', '8H']
+2025-03-20 04:17:30,403 - INFO - Next state for Player 3: {'hand': ['JC', 'QS', 'AD', '7C', '7S'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False}
+2025-03-20 04:17:30,403 - INFO - Extracted state for Player 3: {'hand': ['JC', 'QS', 'AD', '7C', '7S'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False, 'legal_actions': [73, 58, 84, 69, 53], 'raw_legal_actions': ['JC', 'QS', 'AD', '7C', '7S']}
+2025-03-20 04:17:30,403 - INFO - Decoded action ID 58 to: QS
+2025-03-20 04:17:30,403 - INFO - Player 3 takes action: QS
+2025-03-20 04:17:30,403 - INFO - Player 3 played card: QS. Current trick: ['QS']
+2025-03-20 04:17:30,403 - INFO - Next state for Player 0: {'hand': ['AS', 'TD', '8D', 'QD', 'QH'], 'trick': ['QS'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False}
+2025-03-20 04:17:30,403 - INFO - Extracted state for Player 0: {'hand': ['AS', 'TD', '8D', 'QD', 'QH'], 'trick': ['QS'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False, 'legal_actions': [60], 'raw_legal_actions': ['AS']}
+2025-03-20 04:17:30,403 - INFO - Decoded action ID 60 to: AS
+2025-03-20 04:17:30,403 - INFO - Player 0 takes action: AS
+2025-03-20 04:17:30,404 - INFO - Player 0 played card: AS. Current trick: ['QS', 'AS']
+2025-03-20 04:17:30,404 - INFO - Next state for Player 1: {'hand': ['TC', 'JD', 'KD', 'TS', '7D'], 'trick': ['QS', 'AS'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False}
+2025-03-20 04:17:30,404 - INFO - Extracted state for Player 1: {'hand': ['TC', 'JD', 'KD', 'TS', '7D'], 'trick': ['QS', 'AS'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False, 'legal_actions': [56], 'raw_legal_actions': ['TS']}
+2025-03-20 04:17:30,404 - INFO - Decoded action ID 56 to: TS
+2025-03-20 04:17:30,404 - INFO - Player 1 takes action: TS
+2025-03-20 04:17:30,404 - INFO - Player 1 played card: TS. Current trick: ['QS', 'AS', 'TS']
+2025-03-20 04:17:30,404 - INFO - Next state for Player 2: {'hand': ['JS', '9S', 'TH', 'KS', '9H'], 'trick': ['QS', 'AS', 'TS'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False}
+2025-03-20 04:17:30,404 - INFO - Extracted state for Player 2: {'hand': ['JS', '9S', 'TH', 'KS', '9H'], 'trick': ['QS', 'AS', 'TS'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [57, 55, 59], 'raw_legal_actions': ['JS', '9S', 'KS']}
+2025-03-20 04:17:30,405 - INFO - Decoded action ID 55 to: 9S
+2025-03-20 04:17:30,405 - INFO - Player 2 takes action: 9S
+2025-03-20 04:17:30,405 - INFO - Player 2 played card: 9S. Current trick: ['QS', 'AS', 'TS', '9S']
+2025-03-20 04:17:30,405 - INFO - Trick won by Player 2: ['QS', 'AS', 'TS', '9S']
+2025-03-20 04:17:30,405 - INFO - Next state for Player 2: {'hand': ['JS', 'TH', 'KS', '9H'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False}
+2025-03-20 04:17:30,405 - INFO - Extracted state for Player 2: {'hand': ['JS', 'TH', 'KS', '9H'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [57, 64, 59, 63], 'raw_legal_actions': ['JS', 'TH', 'KS', '9H']}
+2025-03-20 04:17:30,405 - INFO - Decoded action ID 63 to: 9H
+2025-03-20 04:17:30,405 - INFO - Player 2 takes action: 9H
+2025-03-20 04:17:30,405 - INFO - Player 2 played card: 9H. Current trick: ['9H']
+2025-03-20 04:17:30,405 - INFO - Next state for Player 3: {'hand': ['JC', 'AD', '7C', '7S'], 'trick': ['9H'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False}
+2025-03-20 04:17:30,406 - INFO - Extracted state for Player 3: {'hand': ['JC', 'AD', '7C', '7S'], 'trick': ['9H'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False, 'legal_actions': [73, 84, 69, 53], 'raw_legal_actions': ['JC', 'AD', '7C', '7S']}
+2025-03-20 04:17:30,406 - INFO - Decoded action ID 69 to: 7C
+2025-03-20 04:17:30,406 - INFO - Player 3 takes action: 7C
+2025-03-20 04:17:30,406 - INFO - Player 3 played card: 7C. Current trick: ['9H', '7C']
+2025-03-20 04:17:30,406 - INFO - Next state for Player 0: {'hand': ['TD', '8D', 'QD', 'QH'], 'trick': ['9H', '7C'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False}
+2025-03-20 04:17:30,406 - INFO - Extracted state for Player 0: {'hand': ['TD', '8D', 'QD', 'QH'], 'trick': ['9H', '7C'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False, 'legal_actions': [66], 'raw_legal_actions': ['QH']}
+2025-03-20 04:17:30,406 - INFO - Decoded action ID 66 to: QH
+2025-03-20 04:17:30,406 - INFO - Player 0 takes action: QH
+2025-03-20 04:17:30,407 - INFO - Player 0 played card: QH. Current trick: ['9H', '7C', 'QH']
+2025-03-20 04:17:30,407 - INFO - Next state for Player 1: {'hand': ['TC', 'JD', 'KD', '7D'], 'trick': ['9H', '7C', 'QH'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False}
+2025-03-20 04:17:30,407 - INFO - Extracted state for Player 1: {'hand': ['TC', 'JD', 'KD', '7D'], 'trick': ['9H', '7C', 'QH'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False, 'legal_actions': [72, 81, 83, 77], 'raw_legal_actions': ['TC', 'JD', 'KD', '7D']}
+2025-03-20 04:17:30,407 - INFO - Decoded action ID 83 to: KD
+2025-03-20 04:17:30,407 - INFO - Player 1 takes action: KD
+2025-03-20 04:17:30,407 - INFO - Player 1 played card: KD. Current trick: ['9H', '7C', 'QH', 'KD']
+2025-03-20 04:17:30,407 - INFO - Trick won by Player 2: ['9H', '7C', 'QH', 'KD']
+2025-03-20 04:17:30,407 - INFO - Next state for Player 2: {'hand': ['JS', 'TH', 'KS'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False}
+2025-03-20 04:17:30,407 - INFO - Extracted state for Player 2: {'hand': ['JS', 'TH', 'KS'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [57, 64, 59], 'raw_legal_actions': ['JS', 'TH', 'KS']}
+2025-03-20 04:17:30,408 - INFO - Decoded action ID 64 to: TH
+2025-03-20 04:17:30,408 - INFO - Player 2 takes action: TH
+2025-03-20 04:17:30,408 - INFO - Player 2 played card: TH. Current trick: ['TH']
+2025-03-20 04:17:30,408 - INFO - Next state for Player 3: {'hand': ['JC', 'AD', '7S'], 'trick': ['TH'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False}
+2025-03-20 04:17:30,408 - INFO - Extracted state for Player 3: {'hand': ['JC', 'AD', '7S'], 'trick': ['TH'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False, 'legal_actions': [73, 84, 53], 'raw_legal_actions': ['JC', 'AD', '7S']}
+2025-03-20 04:17:30,408 - INFO - Decoded action ID 84 to: AD
+2025-03-20 04:17:30,408 - INFO - Player 3 takes action: AD
+2025-03-20 04:17:30,408 - INFO - Player 3 played card: AD. Current trick: ['TH', 'AD']
+2025-03-20 04:17:30,409 - INFO - Next state for Player 0: {'hand': ['TD', '8D', 'QD'], 'trick': ['TH', 'AD'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False}
+2025-03-20 04:17:30,409 - INFO - Extracted state for Player 0: {'hand': ['TD', '8D', 'QD'], 'trick': ['TH', 'AD'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False, 'legal_actions': [80, 78, 82], 'raw_legal_actions': ['TD', '8D', 'QD']}
+2025-03-20 04:17:30,409 - INFO - Decoded action ID 80 to: TD
+2025-03-20 04:17:30,409 - INFO - Player 0 takes action: TD
+2025-03-20 04:17:30,409 - INFO - Player 0 played card: TD. Current trick: ['TH', 'AD', 'TD']
+2025-03-20 04:17:30,409 - INFO - Next state for Player 1: {'hand': ['TC', 'JD', '7D'], 'trick': ['TH', 'AD', 'TD'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False}
+2025-03-20 04:17:30,409 - INFO - Extracted state for Player 1: {'hand': ['TC', 'JD', '7D'], 'trick': ['TH', 'AD', 'TD'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False, 'legal_actions': [72, 81, 77], 'raw_legal_actions': ['TC', 'JD', '7D']}
+2025-03-20 04:17:30,409 - INFO - Decoded action ID 72 to: TC
+2025-03-20 04:17:30,409 - INFO - Player 1 takes action: TC
+2025-03-20 04:17:30,410 - INFO - Player 1 played card: TC. Current trick: ['TH', 'AD', 'TD', 'TC']
+2025-03-20 04:17:30,410 - INFO - Trick won by Player 2: ['TH', 'AD', 'TD', 'TC']
+2025-03-20 04:17:30,410 - INFO - Next state for Player 2: {'hand': ['JS', 'KS'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False}
+2025-03-20 04:17:30,410 - INFO - Extracted state for Player 2: {'hand': ['JS', 'KS'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [57, 59], 'raw_legal_actions': ['JS', 'KS']}
+2025-03-20 04:17:30,410 - INFO - Decoded action ID 59 to: KS
+2025-03-20 04:17:30,410 - INFO - Player 2 takes action: KS
+2025-03-20 04:17:30,410 - INFO - Player 2 played card: KS. Current trick: ['KS']
+2025-03-20 04:17:30,410 - INFO - Next state for Player 3: {'hand': ['JC', '7S'], 'trick': ['KS'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False}
+2025-03-20 04:17:30,410 - INFO - Extracted state for Player 3: {'hand': ['JC', '7S'], 'trick': ['KS'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False, 'legal_actions': [53], 'raw_legal_actions': ['7S']}
+2025-03-20 04:17:30,411 - INFO - Decoded action ID 53 to: 7S
+2025-03-20 04:17:30,411 - INFO - Player 3 takes action: 7S
+2025-03-20 04:17:30,411 - INFO - Player 3 played card: 7S. Current trick: ['KS', '7S']
+2025-03-20 04:17:30,411 - INFO - Next state for Player 0: {'hand': ['8D', 'QD'], 'trick': ['KS', '7S'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False}
+2025-03-20 04:17:30,411 - INFO - Extracted state for Player 0: {'hand': ['8D', 'QD'], 'trick': ['KS', '7S'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False, 'legal_actions': [78, 82], 'raw_legal_actions': ['8D', 'QD']}
+2025-03-20 04:17:30,411 - INFO - Decoded action ID 82 to: QD
+2025-03-20 04:17:30,411 - INFO - Player 0 takes action: QD
+2025-03-20 04:17:30,411 - INFO - Player 0 played card: QD. Current trick: ['KS', '7S', 'QD']
+2025-03-20 04:17:30,411 - INFO - Next state for Player 1: {'hand': ['JD', '7D'], 'trick': ['KS', '7S', 'QD'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False}
+2025-03-20 04:17:30,412 - INFO - Extracted state for Player 1: {'hand': ['JD', '7D'], 'trick': ['KS', '7S', 'QD'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False, 'legal_actions': [81, 77], 'raw_legal_actions': ['JD', '7D']}
+2025-03-20 04:17:30,412 - INFO - Decoded action ID 81 to: JD
+2025-03-20 04:17:30,412 - INFO - Player 1 takes action: JD
+2025-03-20 04:17:30,412 - INFO - Player 1 played card: JD. Current trick: ['KS', '7S', 'QD', 'JD']
+2025-03-20 04:17:30,412 - INFO - Trick won by Player 2: ['KS', '7S', 'QD', 'JD']
+2025-03-20 04:17:30,412 - INFO - Next state for Player 2: {'hand': ['JS'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False}
+2025-03-20 04:17:30,412 - INFO - Extracted state for Player 2: {'hand': ['JS'], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [57], 'raw_legal_actions': ['JS']}
+2025-03-20 04:17:30,412 - INFO - Decoded action ID 57 to: JS
+2025-03-20 04:17:30,412 - INFO - Player 2 takes action: JS
+2025-03-20 04:17:30,413 - INFO - Player 2 played card: JS. Current trick: ['JS']
+2025-03-20 04:17:30,413 - INFO - Next state for Player 3: {'hand': ['JC'], 'trick': ['JS'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False}
+2025-03-20 04:17:30,413 - INFO - Extracted state for Player 3: {'hand': ['JC'], 'trick': ['JS'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 3, 'bidding_phase': False, 'legal_actions': [73], 'raw_legal_actions': ['JC']}
+2025-03-20 04:17:30,413 - INFO - Decoded action ID 73 to: JC
+2025-03-20 04:17:30,413 - INFO - Player 3 takes action: JC
+2025-03-20 04:17:30,413 - INFO - Player 3 played card: JC. Current trick: ['JS', 'JC']
+2025-03-20 04:17:30,413 - INFO - Next state for Player 0: {'hand': ['8D'], 'trick': ['JS', 'JC'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False}
+2025-03-20 04:17:30,413 - INFO - Extracted state for Player 0: {'hand': ['8D'], 'trick': ['JS', 'JC'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 0, 'bidding_phase': False, 'legal_actions': [78], 'raw_legal_actions': ['8D']}
+2025-03-20 04:17:30,413 - INFO - Decoded action ID 78 to: 8D
+2025-03-20 04:17:30,414 - INFO - Player 0 takes action: 8D
+2025-03-20 04:17:30,414 - INFO - Player 0 played card: 8D. Current trick: ['JS', 'JC', '8D']
+2025-03-20 04:17:30,414 - INFO - Next state for Player 1: {'hand': ['7D'], 'trick': ['JS', 'JC', '8D'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False}
+2025-03-20 04:17:30,414 - INFO - Extracted state for Player 1: {'hand': ['7D'], 'trick': ['JS', 'JC', '8D'], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 1, 'bidding_phase': False, 'legal_actions': [77], 'raw_legal_actions': ['7D']}
+2025-03-20 04:17:30,414 - INFO - Decoded action ID 77 to: 7D
+2025-03-20 04:17:30,414 - INFO - Player 1 takes action: 7D
+2025-03-20 04:17:30,414 - INFO - Player 1 played card: 7D. Current trick: ['JS', 'JC', '8D', '7D']
+2025-03-20 04:17:30,414 - INFO - Trick won by Player 2: ['JS', 'JC', '8D', '7D']
+2025-03-20 04:17:30,414 - INFO - Next state for Player 2: {'hand': [], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False}
+2025-03-20 04:17:30,415 - INFO - Extracted state for Player 2: {'hand': [], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [], 'raw_legal_actions': []}
+2025-03-20 04:17:30,415 - INFO - Extracted state for Player 2: {'hand': [], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [], 'raw_legal_actions': []}
+2025-03-20 04:17:30,415 - INFO - Extracted state for Player 2: {'hand': [], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [], 'raw_legal_actions': []}
+2025-03-20 04:17:30,415 - INFO - Extracted state for Player 2: {'hand': [], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [], 'raw_legal_actions': []}
+2025-03-20 04:17:30,415 - INFO - Extracted state for Player 2: {'hand': [], 'trick': [], 'trump': 'S', 'bidding_team': 3, 'bid': 28, 'current_player': 2, 'bidding_phase': False, 'legal_actions': [], 'raw_legal_actions': []}
+2025-03-20 04:17:30,415 - INFO - Payoffs calculated: [1, -1, 1, -1]

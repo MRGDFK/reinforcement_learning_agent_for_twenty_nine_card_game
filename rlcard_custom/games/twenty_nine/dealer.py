@@ -5,11 +5,10 @@ from .card import TwentyNineCard
 class TwentyNineDealer:
     def __init__(self):
         self.deck = TwentyNineCard.get_deck()
-
-    def shuffle(self):
         random.shuffle(self.deck)
 
-    def deal_cards(self, players):
-        self.shuffle()
-        for i, card in enumerate(self.deck):
-            players[i % 4].hand.append(card)
+    def deal_cards(self, players, num_cards=8):
+        for player in players:
+            for _ in range(num_cards):
+                if self.deck:  # Ensure deck isn’t empty
+                    player.add_card(self.deck.pop())

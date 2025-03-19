@@ -47,8 +47,6 @@ import logging
 from rlcard.envs import Env
 from rlcard_custom.games.twenty_nine.game import TwentyNineGame
 
-# Logging is already configured in game.py, no need to reconfigure here
-
 class TwentyNineEnv(Env):
     def __init__(self, config):
         self.name = 'twenty-nine'
@@ -67,6 +65,7 @@ class TwentyNineEnv(Env):
             'bidding_team': state['bidding_team'] if state['bidding_team'] is not None else -1,
             'bid': state['bid'] if state['bid'] is not None else 0,
             'current_player': state['current_player'],
+            'bidding_phase': state['bidding_phase'],
             'legal_actions': legal_action_ids,
             'raw_legal_actions': raw_legal_actions
         }

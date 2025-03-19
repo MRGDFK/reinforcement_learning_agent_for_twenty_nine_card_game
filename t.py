@@ -2,6 +2,8 @@ import random
 import rlcard
 from rlcard.envs import Env
 
+
+
 # Define the deck with 32 cards
 RANKS = ['J', '9', 'A', '10', 'K', 'Q', '8', '7']
 SUITS = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
