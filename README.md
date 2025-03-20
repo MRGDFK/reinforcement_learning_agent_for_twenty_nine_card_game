@@ -2,7 +2,7 @@
 
 This project implements a **reinforcement learning environment** for the **Twenty-Nine** card game, a popular trick-taking game in Bangladesh. Using the `rlcard` library, this environment simulates the game, including phases like **bidding**, **trump selection**, and **trick-taking**. The goal of the project is to build a foundation for training advanced reinforcement learning agents while accurately modeling the Bangladeshi variant of the game.
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Virtual Environment:
 This project uses a virtual environment named `myvenv`.
@@ -25,7 +25,7 @@ python -u test_game.py
 ```
 The output will be logged in `game_log.txt`, capturing the gameplay with a random agent.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 rlcard_custom/                 # Core folder containing the game implementation files (development-focused)
@@ -42,7 +42,7 @@ game_log.txt                   # Log file capturing game progress (bidding, tric
 twenty_nine_full_implementation_one_file.py  # A full implementation for reference (not part of active rlcard environment)
 ```
 
-## 🚀 Development Workflow
+## Development Workflow
 
 ### Branching Strategy:
 - For new features, create a branch named after the feature (e.g., `feature-trump-reveal`).
@@ -51,7 +51,7 @@ twenty_nine_full_implementation_one_file.py  # A full implementation for referen
 
 > **Important**: Do not edit the `main` branch directly to maintain stability.
 
-## ⚙️ Current Progress
+## Current Progress
 
 ### Completed Features:
 - **Working rlcard environment** for Twenty-Nine, with core mechanics implemented in `rlcard_custom/`.
@@ -74,7 +74,7 @@ twenty_nine_full_implementation_one_file.py  # A full implementation for referen
 - Integrating **advanced RL agents** (e.g., Q-learning, DQN) using the `rlcard` framework.
 - Adding advanced **Bangladeshi variant** features like **double**, **redouble**, and **marriage**.
 
-## 🧑‍💻 Game Flow and Phases
+## Game Flow and Phases
 
 ### 1. Initialization:
 - Four players are created.
@@ -95,7 +95,7 @@ twenty_nine_full_implementation_one_file.py  # A full implementation for referen
 - The bidding team (e.g., Players 0+2 or 1+3) earns +1 if they meet/exceed their bid. Points are awarded as follows:
   - J = 3, 9 = 2, A = 1, T = 1
 
-## 📂 File Responsibilities
+## File Responsibilities
 
 ### `rlcard_custom/games/twenty_nine/game.py`
 - **Core game logic**: Manages state (hands, tricks, trump, etc.), processes actions via `step()`, tracks `trick_count`, and determines game end via `is_over()`.
@@ -138,7 +138,7 @@ The **CustomRandomAgent** simulates all four players by performing the following
 - The game progresses via `env.run()`, calling `eval_step()` for each player's turn.
 - The random choices simulate full games but lack strategic play, making it ideal for testing.
 
-## 🧩 Current State
+## Current State
 The game completes 8 tricks per round, calculates scores, and logs all actions and results in game_log.txt. While the current agent is random, future improvements may include integrating more intelligent RL agents, such as Q-learning.
 
 This structure sets a solid foundation for implementing **advanced features** like **double**, **redouble**, and **marriage**, all specific to the **Bangladeshi variant** of Twenty-Nine.
