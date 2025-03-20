@@ -119,7 +119,7 @@ twenty_nine_full_implementation_one_file.py  # A full implementation for referen
 - Runner script to set up the **rlcard environment**, register agents, and run the game.
 - Outputs results to both the console and `game_log.txt`.
 
-## 🎮 How the Agent Plays
+## How the Agent Plays
 
 The **CustomRandomAgent** simulates all four players by performing the following:
 
