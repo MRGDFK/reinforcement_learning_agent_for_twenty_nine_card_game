@@ -1,3 +1,8 @@
+'''
+    File name: rlcard_custom/games/twenty_nine/game.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
 import logging
 from .player import TwentyNinePlayer
 from .dealer import TwentyNineDealer

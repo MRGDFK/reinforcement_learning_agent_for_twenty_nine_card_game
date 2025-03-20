@@ -1,4 +1,8 @@
-# rlcard_custom/games/twenty_nine/dealer.py
+'''
+    File name: rlcard_custom/games/twenty_nine/dealer.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
 import random
 from .card import TwentyNineCard
 

@@ -1,3 +1,9 @@
+'''
+    File name: twenty_nine_full_implementation_one_file.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
+
 import random
 
 # Define the deck with 32 cards

@@ -1,3 +1,9 @@
+'''
+    File name: test_game.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
+
 # # /home/arnob/Documents/test/twenty_nine/test_game.py
 # import sys
 # sys.path.insert(0, '/home/arnob/Documents/test/twenty_nine')
@@ -35,6 +41,7 @@ sys.path.insert(0, '/home/arnob/Documents/test/twenty_nine')
 from rlcard.envs import make
 from rlcard_custom.agents.random_agent import CustomRandomAgent
 from rlcard_custom.envs.twenty_nine import TwentyNineEnv
+
 from rlcard.envs.registration import register, registry
 
 logging.info("Starting test_game.py")

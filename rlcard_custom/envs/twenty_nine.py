@@ -1,3 +1,9 @@
+'''
+    File name: rlcard_custom/envs/twenty_nine.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
+
 # from rlcard.envs import Env
 # from rlcard_custom.games.twenty_nine.game import TwentyNineGame
 

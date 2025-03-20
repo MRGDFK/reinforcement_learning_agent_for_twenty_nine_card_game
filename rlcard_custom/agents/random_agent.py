@@ -1,3 +1,9 @@
+'''
+    File name: rlcard_custom/agents/random_agent.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
+
 import numpy as np
 from rlcard.agents import RandomAgent as BaseRandomAgent
 

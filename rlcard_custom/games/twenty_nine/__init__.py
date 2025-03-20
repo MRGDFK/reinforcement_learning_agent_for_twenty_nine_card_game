@@ -1,4 +1,9 @@
-# rlcard_custom/games/twenty_nine/__init__.py
+'''
+    File name: rlcard_custom/games/twenty_nine/__init__.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
+
 from .card import TwentyNineCard
 from .dealer import TwentyNineDealer
 from .game import TwentyNineGame

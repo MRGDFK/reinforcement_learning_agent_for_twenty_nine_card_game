@@ -1,3 +1,9 @@
+'''
+    File name: rlcard_custom/games/twenty_nine/judger.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
+
 from .card import TwentyNineCard
 
 class TwentyNineJudger:

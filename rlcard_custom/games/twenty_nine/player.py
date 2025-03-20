@@ -1,3 +1,9 @@
+'''
+    File name: rlcard_custom/games/twenty_nine/player.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
+
 # # games/twenty_nine/player.py
 # class TwentyNinePlayer:
 #     def __init__(self, player_id):

@@ -1,4 +1,8 @@
-# rlcard_custom/games/twenty_nine/utils.py
+'''
+    File name: rlcard_custom/games/twenty_nine/utils.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
 from .card import TwentyNineCard
 
 def get_card_by_string(card_str):

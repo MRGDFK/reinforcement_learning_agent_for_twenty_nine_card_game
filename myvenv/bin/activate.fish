@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/arnob/Documents/test/twenty_nine/myvenv
+set -gx VIRTUAL_ENV /home/arnob/reinforcement_learning_agent_for_twenty_nine_card_game/myvenv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

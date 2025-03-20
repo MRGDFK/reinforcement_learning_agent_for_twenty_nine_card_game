@@ -1,4 +1,8 @@
-# rlcard_custom/games/twenty_nine/card.py
+'''
+    File name: rlcard_custom/games/twenty_nine/card.py
+    Author: Arnob Das
+    Date created: 18/03/2025
+'''
 class TwentyNineCard:
     """Represents a card in Twenty-Nine."""
     suits = ['S', 'H', 'C', 'D']  # Spades, Hearts, Clubs, Diamonds
