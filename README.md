@@ -94,7 +94,6 @@ twenty_nine_full_implementation_one_file.py  # A full implementation for referen
 ### 4. Scoring and Game End:
 - The bidding team (e.g., Players 0+2 or 1+3) earns +1 if they meet/exceed their bid. Points are awarded as follows:
   - J = 3, 9 = 2, A = 1, T = 1
-- The game ends when a team’s score reaches **±6**.
 
 ## 📂 File Responsibilities
 
@@ -140,7 +139,7 @@ The **CustomRandomAgent** simulates all four players by performing the following
 - The random choices simulate full games but lack strategic play, making it ideal for testing.
 
 ## 🧩 Current State
-The game completes 8 tricks per round, calculates scores, and continues until a team's score reaches ±6. All actions and results are logged. While the current agent is random, future improvements may include integrating more intelligent RL agents, such as **Q-learning**.
+The game completes 8 tricks per round, calculates scores, and logs all actions and results in game_log.txt. While the current agent is random, future improvements may include integrating more intelligent RL agents, such as Q-learning.
 
 This structure sets a solid foundation for implementing **advanced features** like **double**, **redouble**, and **marriage**, all specific to the **Bangladeshi variant** of Twenty-Nine.
 
