@@ -12,7 +12,7 @@ from .card import TwentyNineCard
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[logging.FileHandler('game_log.txt'), logging.StreamHandler()]
+    handlers=[logging.FileHandler('\Thesis_4732\game_log.txt'), logging.StreamHandler()]
 )
 
 class TwentyNineGame:
@@ -24,6 +24,7 @@ class TwentyNineGame:
         self.bidding_team = None
         self.bid = None
         self.current_player = 0
+        self.trick_count = 0
         self.bidding_phase = True
         self.bids = []  # Track bids during bidding phase
         self.action_space = ['pass'] + [f"{bid}{suit}" for bid in range(16, 29) for suit in TwentyNineCard.suits] + \
@@ -53,10 +54,21 @@ class TwentyNineGame:
 
     def step(self, action):
         logging.info("Player %d takes action: %s", self.current_player, action)
-        
+        '''action_str = self.action_space[action]
+        if self.bidding_phase:
+            if action_str == 'pass':
+                self.bids.append((self.current_player, 'pass', None))
+            else:
+                try:
+                    bid_value = int(action[:-1])
+                    suit = action[-1]
+                    self.bids.append((self.current_player, bid_value, suit))
+                except (ValueError, IndexError):
+                    logging.warning("Invalid bid: %s, treating as pass", action_str)
+                    self.bids.append((self.current_player, 'pass', None)) '''
         if self.bidding_phase:
             if action == 'pass':
-                self.bids.append((self.current_player, 'pass'))
+                self.bids.append((self.current_player, 'pass', None))
             else:
                 bid_value = int(action[:-1])
                 suit = action[-1]
@@ -96,6 +108,7 @@ class TwentyNineGame:
                 self.players[winner].add_trick(self.current_trick)
                 logging.info("Trick won by Player %d: %s", winner, [str(c) for c in self.current_trick])
                 self.current_trick = []
+                self.trick_count += 1
                 self.current_player = winner
             else:
                 self.current_player = (self.current_player + 1) % 4
@@ -119,11 +132,33 @@ class TwentyNineGame:
         if self.bidding_phase:
             return ['pass'] + [f"{bid}{suit}" for bid in range(16, 29) for suit in TwentyNineCard.suits]
         hand = self.players[player_id].hand
+        '''
         if not self.current_trick or not hand:
             return [str(card) for card in hand]
         lead_suit = self.current_trick[0].suit
         return [str(card) for card in hand if card.suit == lead_suit] or [str(card) for card in hand]
-
+        '''
+        if not hand or self.trick_count >= 8:
+            return ['pass']
+    
+        if not self.current_trick:  # Leading the trick
+            return [str(card) for card in hand]
+    
+        lead_suit = self.current_trick[0].suit
+        lead_suit_cards = [str(card) for card in hand if card.suit == lead_suit]
+    
+        if lead_suit_cards:  # Must follow lead suit if possible
+            logging.info("Player %d has lead suit cards: %s", player_id, lead_suit_cards)
+            return lead_suit_cards
+    
+        trump_cards = [str(card) for card in hand if card.suit == self.trump_suit]
+        if trump_cards:  # Play trump if no lead suit
+            logging.info("Player %d has no lead suit, trump cards: %s", player_id, trump_cards)
+            return trump_cards
+    
+        logging.info("Player %d has no lead suit or trump, all cards: %s", player_id, [str(card) for card in hand])
+        return [str(card) for card in hand]
+    
     def is_over(self):
         return not self.bidding_phase and all(len(p.hand) == 0 for p in self.players)
 

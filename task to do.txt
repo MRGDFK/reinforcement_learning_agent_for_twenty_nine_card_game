@@ -1,0 +1,3 @@
+- marriage, double , redouble
+- +6 nyle -6
+- array index outbound
