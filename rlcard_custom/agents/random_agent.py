@@ -14,7 +14,8 @@ class CustomRandomAgent(BaseRandomAgent):
     def eval_step(self, state):
         legal_actions = state['legal_actions']  # Expecting a list
         probs = np.ones(len(legal_actions)) / len(legal_actions)
-        action = np.random.choice(legal_actions)
+        #action = np.random.choice(legal_actions)
+        action = int(input())
         info = {
             'probs': {state['raw_legal_actions'][i]: probs[i] for i in range(len(legal_actions))}
         }
