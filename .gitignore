@@ -1,0 +1,8 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+myvenv/
+
+# Ignore game logs
+game_log.txt
