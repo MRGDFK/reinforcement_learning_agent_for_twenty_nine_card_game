@@ -4,6 +4,12 @@
     Date created: 18/03/2025
 '''
 
+'''
+    Author: Sharjil
+    Work : bidding bug fixed for twenty nine game.
+
+'''
+
 import random
 
 class RandomAgent:
